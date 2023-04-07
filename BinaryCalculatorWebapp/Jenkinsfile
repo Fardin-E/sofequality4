@@ -59,13 +59,7 @@ spec:
       }
     }
     stage('Build and push image with Container Builder') {
-      steps 
-      withCredentials([
-                    usernamePassword(
-                        credentialsId: 'git-credentials',
-                        usernameVariable: 'GIT_USERNAME',
-                        passwordVariable: 'GIT_PASSWORD'
-                        ]){
+      steps {
         container('gcloud') {
           sh "/builder/google-cloud-sdk/bin/gcloud builds submit -t ${IMAGE_TAG} ./BinaryCalculatorWebapp/"
         }
