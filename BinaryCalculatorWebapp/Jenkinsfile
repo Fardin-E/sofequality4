@@ -2,7 +2,7 @@ pipeline {
   environment {
     //PROJECT = "REPLACE_WITH_YOUR_PROJECT_ID"
 	PROJECT = "sofequality4"
-    APP_NAME = "binary-calculator2"
+    APP_NAME = "BinaryCalculatorWebapp"
 	//CLUSTER = "REPLACE_WITH_YOUR_CLUSTER_NAME"
     CLUSTER = "sofe3980u"
     CLUSTER_ZONE = "northamerica-northeast1-b"
